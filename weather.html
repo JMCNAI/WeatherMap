@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Integrated Project 3 Web Application</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <!-- Dropdown 1 - Projects -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li>
+        <a href="weather.html" class="purple-text">Weather</a>
+      </li>
+      <li class="divider"></li>
+      <li><a href="earthquake.html" class="purple-text">Earthquakes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Space</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">News</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Movies</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Health</a></li>
+    </ul>
+    <!-- Dropdown 2 - Tutorials -->
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="weather_tutorial.html" class="purple-text">Weather</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Earthquakes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Space</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">News</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Movies</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Health</a></li>
+    </ul>
+    <!-- Dropdown 3 - Projects -->
+    <ul id="dropdown3" class="dropdown-content">
+      <li class="active">
+        <a href="weather.html" class="purple-text">Weather</a>
+      </li>
+      <li class="divider"></li>
+      <li><a href="earthquake.html" class="purple-text">Earthquakes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Space</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">News</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Movies</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Health</a></li>
+    </ul>
+    <!-- Dropdown 4 - Tutorials -->
+    <ul id="dropdown4" class="dropdown-content">
+      <li><a href="weather_tutorial.html" class="purple-text">Weather</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Earthquakes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Space</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">News</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Movies</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" class="purple-text">Health</a></li>
+    </ul>
+    <!-- Main nav for screen -->
+    <nav class="z-depth-3 purple darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"
+            ><i class="material-icons">graphic_eq</i>IP3</a
+          >
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="dropdown-trigger" href="#" data-target="dropdown3">
+                Projects
+                <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" href="#" data-target="dropdown4">
+                Tutorials
+                <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidenav (hidden unless mobile) -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">MENU</a></li>
+      <li>
+        <a class="dropdown-trigger" href="#" data-target="dropdown1">
+          Projects
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-trigger" href="#" data-target="dropdown2">
+          Tutorials
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Weather visualisation -->
+    <div class="container">
+      <div class="row">
+        <h1>Weather Map</h1>
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+      <div id="map-canvas"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer purple darken-3">
+      <div class="container center">
+        © 2019 GCU - IP3
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBALe_xujM4-Dk7RZvwq-Ph0y1SZQDM0oo&callback=initMap"></script>
+    <script src="js/weather.js"></script>
+
+  </body>
+</html>
